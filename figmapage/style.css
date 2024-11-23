@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a{
 
 .services {
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
     background-color: var(--brand-green-light);
     justify-content: center;
@@ -45,7 +45,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a{
     width: 800px;
     display: flex;
     align-items: center;
-    
 }
 
 .services .services_box {
@@ -54,35 +53,80 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li, a{
     display: flex;
 }
 
-.services .services-box {
+.services .services-boxes {
     display: flex;
-    flex-direction: column;
     gap: 30px;
+    width: 1200px;
+    column-gap: 20px;
+    flex-direction: column;
+    line-height: 1.4;
 }
 
 .services .services-boxes .lets_try {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    width: 100%;
+    gap: 70px;
+    background-color: var(--brand-green-light);
+    border: 0;
 }
 
-.services .services-boxes div {
-    text-align: left;
-    flex-direction: column;
-    gap: 30px;
-    border: 1px solid black;
-    background-color: white;
-}
-/* 
-.services .services-boxes .second_s {
-    border: 1px solid black;
-    background-color: white;
-}
-*/
-.services .services-boxes div img {
-    width: 10px;
-    height: 10px;
+.services .services-boxes .second_row {
     display: flex;
+    width: 100%;
+    gap: 60px;
+    background-color: var(--brand-green-light);
+    border: 0;
+}
+
+.services .services-boxes .second_row div {
+    height: 200px;
+    text-align: left;
+    gap: 20px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.services .services-boxes .lets_try div {
+    height: 200px;
+    text-align: left;
+    gap: 20px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.services .services-boxes .second_try {
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px;
+} 
+
+.services .services-boxes .second_try div {
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px;
+}
+
+.services .services-boxes .lets_try div {
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 10px;
+}
+
+.services .services-boxes div img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border-radius: 50%;
 }
 
 main .virtual-health {
@@ -92,10 +136,10 @@ main .virtual-health {
     margin-top: 60px;
     margin-top: 5%;
     margin-bottom: 5%;
+    flex-wrap: wrap;
 }
 
 main .virtual-health .virtual-health-box {
-    max-width: var(--lg);
     text-align: left;
     width: 475px;
     padding: 70px;
@@ -119,7 +163,7 @@ main .virtual-health .contact-img-box img {
 
 main .virtual-health .virtual-health-box p img {
     width: 20px;
-   fill: white;
+    fill: white;
 }
 
 main .virtual-health .virtual-health-box h1 {
@@ -156,15 +200,20 @@ main .virtual-health .virtual-health-box button img {
     width: 25px;
 }
 
-footer .footer-text{
+footer .footer-text {
     background-color: var(--brand-green);
     display: flex;
-    width: 100%;
     color: white;
     height: 300px;
     justify-content: space-around;
     align-items: center;
-    
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer .footer-text div {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer .footer-text .footer-text-box {
@@ -191,6 +240,5 @@ footer .footer-icons {
 
 footer .footer-icons img{
     width: 30px;
-    gap: 20px;
     background-color: #00453A;
 }
